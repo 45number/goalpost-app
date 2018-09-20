@@ -137,18 +137,39 @@
                                                     <color key="textColor" red="0.45472489960000001" green="0.7722371817" blue="0.37931393959999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qnv-1y-3bb">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GOAL COMPLETE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mq5-mb-0a9">
+                                                            <rect key="frame" x="56.5" y="15" width="262.5" height="41"/>
+                                                            <fontDescription key="fontDescription" name="AvenirNext-Heavy" family="Avenir Next" pointSize="30"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" red="0.91764705879999997" green="0.66274509800000003" blue="0.2666666667" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstItem="mq5-mb-0a9" firstAttribute="centerY" secondItem="qnv-1y-3bb" secondAttribute="centerY" id="ZzJ-Oh-0Yb"/>
+                                                        <constraint firstItem="mq5-mb-0a9" firstAttribute="centerX" secondItem="qnv-1y-3bb" secondAttribute="centerX" id="yxN-JK-jOs"/>
+                                                    </constraints>
+                                                </view>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="FCj-T3-cAU" firstAttribute="top" secondItem="3Ul-Qb-aLb" secondAttribute="top" constant="10" id="79t-hK-TKt"/>
                                                 <constraint firstAttribute="bottom" secondItem="eon-Ns-CFi" secondAttribute="bottom" constant="8" id="Fa9-ve-RJu"/>
                                                 <constraint firstAttribute="trailing" secondItem="eon-Ns-CFi" secondAttribute="trailing" constant="8" id="Fme-9p-mxr"/>
+                                                <constraint firstItem="qnv-1y-3bb" firstAttribute="top" secondItem="3Ul-Qb-aLb" secondAttribute="top" id="HhH-wb-J8f"/>
                                                 <constraint firstAttribute="bottom" secondItem="FCj-T3-cAU" secondAttribute="bottom" constant="10" id="M53-Ul-17Q"/>
+                                                <constraint firstAttribute="bottom" secondItem="qnv-1y-3bb" secondAttribute="bottom" id="VBs-82-zaO"/>
+                                                <constraint firstAttribute="trailing" secondItem="qnv-1y-3bb" secondAttribute="trailing" id="bNL-ur-AHg"/>
                                                 <constraint firstItem="eon-Ns-CFi" firstAttribute="leading" secondItem="FCj-T3-cAU" secondAttribute="trailing" constant="10" id="dWd-mw-ZfP"/>
                                                 <constraint firstItem="FCj-T3-cAU" firstAttribute="leading" secondItem="3Ul-Qb-aLb" secondAttribute="leading" constant="16" id="eWG-Wb-wpc"/>
                                                 <constraint firstItem="eon-Ns-CFi" firstAttribute="top" secondItem="3Ul-Qb-aLb" secondAttribute="top" constant="8" id="nfi-8j-m59"/>
+                                                <constraint firstItem="qnv-1y-3bb" firstAttribute="leading" secondItem="3Ul-Qb-aLb" secondAttribute="leading" id="uPN-Yq-zjh"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="completionView" destination="qnv-1y-3bb" id="k9U-et-Ld2"/>
                                             <outlet property="goalDescriptionLbl" destination="Y29-fb-zsZ" id="7Ok-ta-WKv"/>
                                             <outlet property="goalProgressLbl" destination="eon-Ns-CFi" id="jY5-jB-3DC"/>
                                             <outlet property="goalTypeLbl" destination="LJU-Xq-T64" id="FIk-6g-qaC"/>
